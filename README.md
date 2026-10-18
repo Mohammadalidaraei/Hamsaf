@@ -92,19 +92,6 @@ player/
 * **سطل زباله هوشمند (Soft Delete):** اطلاعات و کاربران حذف‌شده تا ۳۰ روز به طور ایمن در سطل زباله می‌مانند و قابل بازیابی کامل هستند.
 * **حالت تعمیر و خاموشی:** قطع موقت دسترسی کاربران برای به‌روزرسانی سیستم یا در بازه شبانه.
 
-## 🗄️ جداول پایگاه داده (دیتابیس)
-این سامانه از ۳۲ جدول در MySQL استفاده می‌کند. مهم‌ترین آن‌ها عبارتند از:
-
-* `users`, `roles`, `role_permissions`, `user_permissions`, `user_groups`, `groups`: مدیریت کاربران، نقش‌ها و گروه‌ها.
-* `points`, `point_actions`, `negative_actions`, `point_permits`: مدیریت و لاگ موتور امتیازدهی.
-* `rewards`, `reward_requests`: فروشگاه جوایز.
-* `challenges`, `challenge_completions`: چالش‌ها.
-* `arman_sessions`, `arman_attendance`: مدیریت جلسات و حضور و غیاب طرح آرمان.
-* `qr_sessions`, `qr_checkins`: سیستم حضورگیری با QR کد.
-* `announcements`, `announcement_reads`, `tickets`: اعلانات و پشتیبانی.
-* `courses`, `course_registrations`: دوره‌ها و مسابقات.
-* `trash_bin`: سطل زباله هوشمند.
-
 ## 🔒 قابلیت‌های فنی و امنیتی
 * **محافظت در برابر حملات:** جلوگیری از حملات تزریق SQL (با استفاده از Prepared Statements)، اعتبارسنجی خودکار CSRF Token، و XSS Prevention.
 * **محدودیت و مسدودسازی:** ثبت تلاش‌های ناموفق ورود (`login_attempts`) و مسدودسازی IP های مشکوک.
